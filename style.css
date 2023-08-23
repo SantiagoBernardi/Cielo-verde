@@ -210,7 +210,7 @@ main h1 {
 }
 
 .palabraF {
-    grid-area: 35 / 3 / 39 / 6;
+    grid-area: 35 / 3 / 39 / 5;
     display: flex;
     transition: transform 0.5s ease;
 }
