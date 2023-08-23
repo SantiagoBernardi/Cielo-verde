@@ -22,10 +22,14 @@ window.onscroll = function (){
     if(scroll > 300){
         console.log("Pasaste la posicion 300 del scroll");
         document.querySelector(".arrow").classList.add("hide");
-        
+        document.querySelector(".palabra").classList.add("palabraCenter");
     }
     if(scroll < 300){
         document.querySelector(".arrow").classList.remove("hide");
+        document.querySelector(".palabra").classList.remove("center");
         
+    }
+    if(scroll > 250){
+        document.querySelector(".palabra").classList.add("center");
     }
 }
