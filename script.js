@@ -22,14 +22,29 @@ window.onscroll = function (){
     if(scroll > 300){
         console.log("Pasaste la posicion 300 del scroll");
         document.querySelector(".arrow").classList.add("hide");
-        document.querySelector(".palabra").classList.add("palabraCenter");
     }
-    if(scroll < 300){
-        document.querySelector(".arrow").classList.remove("hide");
-        document.querySelector(".palabra").classList.remove("center");
+        else{
+            document.querySelector(".arrow").classList.remove("hide");
+        }
+
+    if(scroll > 200) {
+        document.querySelector("main h1").classList.add("opacity");
+    }
+        else {
+            document.querySelector("main h1").classList.remove("opacity");
+        }
         
-    }
     if(scroll > 250){
-        document.querySelector(".palabra").classList.add("center");
+        document.querySelector(".palabraA").classList.remove("palabraInicialize");
     }
+        else {
+            document.querySelector(".palabraA").classList.add("palabraInicialize");
+        }
+
+    if(scroll > 500){
+        document.querySelector(".palabraB").classList.remove("palabraInicialize");
+    }
+        else {
+            document.querySelector(".palabraB").classList.add("palabraInicialize");
+        }
 }
