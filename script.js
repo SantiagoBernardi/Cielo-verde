@@ -47,4 +47,32 @@ window.onscroll = function (){
         else {
             document.querySelector(".palabraB").classList.add("palabraInicialize");
         }
+
+    if(scroll > 750){
+        document.querySelector(".palabraC").classList.remove("palabraInicializeReverse");
+    }
+        else {
+            document.querySelector(".palabraC").classList.add("palabraInicializeReverse");
+        }
+    
+    if(scroll > 1000){
+        document.querySelector(".palabraD").classList.remove("palabraInicialize");
+    }
+        else {
+            document.querySelector(".palabraD").classList.add("palabraInicialize");
+        }
+
+    if(scroll > 1250){
+        document.querySelector(".palabraE").classList.remove("palabraInicializeReverse");
+    }
+        else {
+            document.querySelector(".palabraE").classList.add("palabraInicializeReverse");
+        }
+    
+    if(scroll > 1500){
+        document.querySelector(".palabraF").classList.remove("palabraInicialize");
+    }
+        else {
+            document.querySelector(".palabraF").classList.add("palabraInicialize");
+        }
 }

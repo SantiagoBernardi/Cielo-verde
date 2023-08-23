@@ -116,6 +116,7 @@ main h1 {
     transition: opacity 0.5s ease;
 }
 
+/* aqui comienza el slide del main */
 .slide {
     height: 200vh;
     display: grid;
@@ -123,6 +124,7 @@ main h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 100vh;
+    overflow: hidden;
 }
     .imgA {
         grid-area: 2 / 2 / 7 / 9;
@@ -135,23 +137,22 @@ main h1 {
     }
 
     .imgC  {
-        background-color: yellow;
-        grid-area: 13 / 2 / 17 / 6;
+        grid-area: 14 / 2 / 20 / 7;
+
     }
 
     .imgD {
-        background-color: green;
-        grid-area: 18 / 2 / 24 / 10;
+        grid-area: 19 / 3 / 27 / 10;
+        padding-top: 10px;
     }
 
     .imgE {
-        background-color: blue;
-        grid-area: 23 / 3 / 28 / 10;
+        grid-area: 29 / 2 / 35 / 9;
     }
 
     .imgF {
-        background-color: pink;
-        grid-area: 29 / 2 / 35 / 7;
+        grid-area: 34 / 4 / 39 / 10;
+        padding-top: 10px;
     }
 
 .imgNormalize {
@@ -169,7 +170,9 @@ main h1 {
     display: flex;
     transition: transform 0.5s ease;
 }
-
+.palabraA h2 {
+    margin: 15px;
+}
 .palabraB {
     grid-area: 6 / 1 / 11 / 5;
     display: flex;
@@ -177,42 +180,57 @@ main h1 {
     align-items: flex-end;
 }
 .palabraB h2 {
+    transform: rotate(270deg);
+}
+
+.palabraC {
+    grid-area: 15 / 6 / 18 / 9;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.palabraC h2 {
     transform: rotate(90deg);
 }
 
+.palabraD {
+    grid-area: 27 / 4 / 27 / 9;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.palabraD h2 {
+    margin: 15px;
+}
+.palabraE {
+    grid-area: 31 / 9 / 31 / 11;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.palabraE h2 {
+    transform: rotate(90deg);
+}
+
+.palabraF {
+    grid-area: 35 / 3 / 39 / 6;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.palabraF h2 {
+    transform: rotate(270deg);
+}
 .palabraNormalize {
     font-size: 1.8em;
     color: #f4f4f4;
-
 }
-
 .palabraInicialize {
     transform: translateX(-200%);
     transition: transform 0.5s ease;
 }
-.palabra {
-    font-size: 1.8em;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-    margin: 5px;
-}
-.palabra2 {
-    display: flex;
-    position: absolute;
-    font-size: 2rem;
-    transform: translateX(-100%) rotate(90deg);
-    transition: transform 0.5s ease;
-    margin: 5px;
-}
-.rotate {
-    transform: rotate(90deg);
-}
-.center{
-    text-align: center;
-    transform: translateX(0%);
+.palabraInicializeReverse {
+    transform: translateX(200%);
     transition: transform 0.5s ease;
 }
 
+/* aqui empieza el aside */
 aside {
     grid-area: aside;
     height: 100vh;
