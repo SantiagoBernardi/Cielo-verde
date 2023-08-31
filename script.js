@@ -27,6 +27,13 @@ window.onscroll = function (){
             document.querySelector(".arrow").classList.remove("hide");
         }
 
+    if(scroll > 100) {
+        document.querySelector("main a").classList.add("no-display");
+    }
+        else {
+            document.querySelector("main a").classList.remove("no-display");
+        }
+
     if(scroll > 200) {
         document.querySelector("main h1").classList.add("opacity");
     }
