@@ -88,7 +88,7 @@ nav {
 
 /* aqui empieza el main */
 .front {
-    height: 100vh;
+    height: 100dvh;
     background-image: url(/assets/front.png);
     background-size: cover;
     position: relative;
@@ -133,7 +133,7 @@ nav {
 
 /* aqui comienza el slide del main */
 .gallery {
-    height: 100vh;
+    height: 100dvh;
     display: grid;
     grid-template-rows: repeat(20, 1fr);
     grid-template-columns: repeat(10, 1fr);
@@ -202,11 +202,11 @@ nav {
 
 /* aqui empieza el aside */
 aside {
-    height: 100vh;
+    height: 100dvh;
     background-color: bisque;
 }
 section{
-    height: 100vh;
+    height: 100dvh;
     background-color: #156EA7;
 }
 
