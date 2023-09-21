@@ -4,7 +4,6 @@ new fullpage('#fullpage', {
     //options here
     dragAndMove: true,
     autoScrolling:true,
-    normalScrollElements: '.gallery, aside, section',
     scrollHorizontally: false,
     onLeave: function(origin){
         if (origin.index == 0) {
