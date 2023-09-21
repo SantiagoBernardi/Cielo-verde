@@ -2,6 +2,7 @@
 
 new fullpage('#fullpage', {
     //options here
+    dragAndMove: true,
     autoScrolling:true,
     normalScrollElements: '.gallery, aside, section',
     scrollHorizontally: false,
