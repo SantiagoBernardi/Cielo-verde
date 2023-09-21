@@ -1,5 +1,24 @@
 "use strict"
 
+new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true,
+    normalScrollElements: '.gallery, aside, section',
+    scrollHorizontally: false,
+    onLeave: function(origin){
+        if (origin.index == 0) {
+            document.querySelector(".palabraA").classList.remove("palabraInicializeReverse");
+            document.querySelector(".palabraB").classList.remove("palabraInicialize");
+            document.querySelector(".palabraC").classList.remove("palabraInicializeReverse");
+        }
+        if (origin.index == 1) {
+            document.querySelector(".palabraA").classList.add("palabraInicializeReverse");
+            document.querySelector(".palabraB").classList.add("palabraInicialize");
+            document.querySelector(".palabraC").classList.add("palabraInicializeReverse");
+        }
+    }
+});
+
 document.querySelector("#menu-bar").addEventListener("click", show);
 document.querySelector("#close").addEventListener("click", show);
 
@@ -15,6 +34,7 @@ document.querySelector("main").addEventListener("scroll", function() {
 
 // Detectamos cuando el usuario desplace la pantalla
 window.onscroll = function (){
+    console.log("script.js");
     // Obtenemos la posicion del scroll en pantall
     var scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
