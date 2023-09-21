@@ -5,6 +5,7 @@ new fullpage('#fullpage', {
     dragAndMove: true,
     autoScrolling:true,
     scrollHorizontally: false,
+    scrollOverflowMacStyle: false,
     onLeave: function(origin){
         if (origin.index == 0) {
             document.querySelector(".palabraA").classList.remove("palabraInicializeReverse");
