@@ -20,66 +20,36 @@ window.onscroll = function (){
 
     // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
     if(scroll > 300){
-        console.log("Pasaste la posicion 300 del scroll");
         document.querySelector(".arrow").classList.add("hide");
     }
         else{
             document.querySelector(".arrow").classList.remove("hide");
         }
-
-    if(scroll > 100) {
-        document.querySelector("main a").classList.add("no-display");
-    }
-        else {
-            document.querySelector("main a").classList.remove("no-display");
-        }
-
-    if(scroll > 200) {
+    if(scroll > 250) {
         document.querySelector("main h1").classList.add("opacity");
     }
         else {
             document.querySelector("main h1").classList.remove("opacity");
         }
         
-    if(scroll > 250){
-        document.querySelector(".palabraA").classList.remove("palabraInicialize");
+    if(scroll > 150){
+        document.querySelector(".palabraA").classList.remove("palabraInicializeReverse");
     }
         else {
-            document.querySelector(".palabraA").classList.add("palabraInicialize");
+            document.querySelector(".palabraA").classList.add("palabraInicializeReverse");
         }
 
-    if(scroll > 500){
+    if(scroll > 300){
         document.querySelector(".palabraB").classList.remove("palabraInicialize");
     }
         else {
             document.querySelector(".palabraB").classList.add("palabraInicialize");
         }
 
-    if(scroll > 750){
+    if(scroll > 550){
         document.querySelector(".palabraC").classList.remove("palabraInicializeReverse");
     }
         else {
             document.querySelector(".palabraC").classList.add("palabraInicializeReverse");
-        }
-    
-    if(scroll > 1000){
-        document.querySelector(".palabraD").classList.remove("palabraInicialize");
-    }
-        else {
-            document.querySelector(".palabraD").classList.add("palabraInicialize");
-        }
-
-    if(scroll > 1250){
-        document.querySelector(".palabraE").classList.remove("palabraInicializeReverse");
-    }
-        else {
-            document.querySelector(".palabraE").classList.add("palabraInicializeReverse");
-        }
-    
-    if(scroll > 1500){
-        document.querySelector(".palabraF").classList.remove("palabraInicialize");
-    }
-        else {
-            document.querySelector(".palabraF").classList.add("palabraInicialize");
         }
 }

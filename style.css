@@ -30,26 +30,26 @@ header {
     justify-content: space-between;
     position: fixed;
 }
-.logo{
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-}
+    .logo{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+    }
 
-.img-nav {
-    width: 30px;
-    height: 30px;
-    margin: 15px;
-    cursor: pointer;
-}
+    .img-nav {
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+        cursor: pointer;
+    }
 
-.show {
-    display: flex;
-    flex-direction: column;
-    width: 17.5rem;
-    transition: width 0.3s ease;
-}
+    .show {
+        display: flex;
+        flex-direction: column;
+        width: 17.5rem;
+        transition: width 0.3s ease;
+    }
 
 nav {
     height: 100vh;
@@ -61,41 +61,40 @@ nav {
     overflow: auto;
 }
 
-.nav-sup {
-    display: flex;
-    justify-content: space-between;
-    background-color: #054C2A;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-}
+    .nav-sup {
+        display: flex;
+        justify-content: space-between;
+        background-color: #054C2A;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
-.nav-sup div {
-    display: flex;
-}
+    .nav-sup div {
+        display: flex;
+    }
 
-.nav-sup div p {
-    color: #f4f4f4;
-    font-weight: bold;
-    padding-top: 5px;
-}
+    .nav-sup div p {
+        color: #f4f4f4;
+        font-weight: bold;
+        padding-top: 5px;
+    }
 
-.nav-bot {
-    height: 100%;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    
-}
-.nav-bot ul {
-    margin: 0;
-    padding: 0 1rem 0 1rem;
-}
+    .nav-bot {
+        height: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        
+    }
+    .nav-bot ul {
+        margin: 0;
+        padding: 0 1rem 0 1rem;
+    }
 
-.nav-bot ul li {
-    padding: 1rem 0 1rem 0;
-}
+    .nav-bot ul li {
+        padding: 1rem 0 1rem 0;
+    }
 
 /* aqui empieza el main */
 main {
     grid-area: main;
-    height: 300vh;
 }
 
 .front {
@@ -133,128 +132,83 @@ main {
         transition: visibility 0s, 0.5s linear;
     }
 
-.opacity {
-    opacity: 40%;
-    transition: opacity 0.5s ease;
-}
-
-.no-display {
-    opacity: 0;
-    transition: visibility 0s, 0.5s linear;
-}
+    .opacity {
+        opacity: 30%;
+        transition: opacity 0.5s ease;
+    }
+    .no-display {
+        opacity: 0;
+        transition: visibility 0s, 0.5s linear;
+    }
 
 /* aqui comienza el slide del main */
 .slide {
-    height: 200vh;
+    height: 100vh;
     display: grid;
-    grid-template-rows: repeat(40, 1fr);
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     justify-items: center;
     overflow: hidden;
+    position: relative;
 }
     .imgA {
-        grid-area: 2 / 2 / 7 / 9;
+        grid-area: 2 / 2 / 8 / 8;
     }
 
     .imgB {
-        grid-area: 5 / 4 / 12 / 10;
-        display: flex;
-        flex-direction: row;
+        grid-area: 6 / 4 / 12 / 10;
     }
 
     .imgC  {
-        grid-area: 14 / 2 / 20 / 7;
-
+        grid-area: 13 / 2 / 20 / 8;
+       
     }
 
-    .imgD {
-        grid-area: 19 / 3 / 27 / 10;
-        padding-top: 10px;
+    .imgNormalize {
+        width: 100%;
+    }
+    .imgNormalize img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
-    .imgE {
-        grid-area: 29 / 2 / 35 / 9;
+    .palabraA {
+        grid-area: 3 / 8 / 7 / 8;
+        display: flex;
+        transition: transform 0.5s ease;
+        z-index: 1;
+    
     }
-
-    .imgF {
-        grid-area: 34 / 4 / 39 / 10;
-        padding-top: 10px;
+    .palabraB {
+        grid-area: 6 / 3 / 12 / 3;
+        display: flex;
+        transition: transform 0.5s ease;
     }
-
-.imgNormalize {
-    width: 100%;
-}
-.imgNormalize img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.palabraA {
-    grid-area: 1 / 2 / 1 / 9;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.palabraA h2 {
-    margin: 15px;
-}
-.palabraB {
-    grid-area: 6 / 1 / 11 / 5;
-    display: flex;
-    transition: transform 0.5s ease;
-    align-items: flex-end;
-}
-.palabraB h2 {
-    transform: rotate(270deg);
-}
-
-.palabraC {
-    grid-area: 15 / 6 / 18 / 9;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.palabraC h2 {
-    transform: rotate(90deg);
-}
-
-.palabraD {
-    grid-area: 27 / 4 / 27 / 9;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.palabraD h2 {
-    margin: 15px;
-}
-.palabraE {
-    grid-area: 31 / 9 / 31 / 11;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.palabraE h2 {
-    transform: rotate(90deg);
-}
-
-.palabraF {
-    grid-area: 35 / 3 / 39 / 5;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.palabraF h2 {
-    transform: rotate(270deg);
-}
-.palabraNormalize {
-    font-size: 1.8em;
-    color: #f4f4f4;
-}
-.palabraInicialize {
-    transform: translateX(-200%);
-    transition: transform 0.5s ease;
-}
-.palabraInicializeReverse {
-    transform: translateX(200%);
-    transition: transform 0.5s ease;
-}
+    .palabraB h2 {
+        transform: rotate(180deg);
+    }
+    .palabraC {
+        grid-area: 14 / 8 / 19 / 8;
+        transition: transform 0.5s ease;
+    }
+    .palabraNormalize {
+        padding-left: 5px;
+        text-align: center;
+        margin: 0;
+        font-size: clamp(35px, -6.5915492958px + 9.7183098592vw, 180px);
+        writing-mode: vertical-rl;
+        color: #f4f4f4;
+    }
+    .palabraInicialize {
+        transform: translateX(-100vw);
+        transition: transform 0.5s ease;
+    }
+    .palabraInicializeReverse {
+        transform: translateX(100vw);
+        transition: transform 0.5s ease;
+    }
 
 /* aqui empieza el aside */
 aside {
